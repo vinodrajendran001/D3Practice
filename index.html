@@ -24,7 +24,7 @@ var bars = canvas.selectAll("rect")
 				 .data(dataArray)
 				 .enter()
 				 	.append("rect")
-				 	.attr("width", function(d){return d;})
+				 	.attr("width", function(d){return d * 10;})
 				 	.attr("height", 50)
 				 	.attr("y",function(d,i){return i*100;})
 
